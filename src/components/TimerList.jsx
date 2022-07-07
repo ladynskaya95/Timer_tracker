@@ -1,24 +1,29 @@
 import React from 'react';
 import TimerItem from "./TimerItem.jsx"
+import { useSelector } from "react-redux";
 
-const TimerList = ({time, running, setRunning, items, removeItem, id }) => {
+const TimerList = ({time, running, setRunning}) => {
+const items = useSelector((state) => state.item);
+
     return (
       <div className="timerList">
         {items.map((item) => (
-          <TimerItem
+         
+   <TimerItem
             key={item.id}
             time={time}
             running={running}
             setRunning={setRunning}
-            items={items}
             title={item.title}
-            removeItem={removeItem}
             id={item.id}
+            items={items}
           />
-        ))}
+          )
+        )}
       </div>
     );
 };
 
 export default TimerList;
+
 

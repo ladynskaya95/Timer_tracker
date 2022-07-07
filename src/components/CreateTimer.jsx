@@ -1,28 +1,30 @@
 import React from 'react';
+import { useDispatch } from "react-redux";
+import { add } from "../redux/itemSlice";
 
+const CreateTimer = ({running, setRunning, date}) => {
+const [name, setName] = React.useState("");
 
-const CreateTimer = ({running, setRunning, name, setName, addItem}) => {
-
-
-
+ const dispatch = useDispatch();
+ 
 
     return (
       <div className="createTimer">
-          <label htmlFor="name">
-            <input
-              className="input_Timer"
-              autoComplete="off"
-              id="name"
-              value={name}
-              onChange={(event) => setName(event.target.value) }
-              name="name"
-              placeholder='Enter tracker name'
-            />
-            <button 
-            onClick={() => addItem()}
-            className="btnAdd"></button>
-          </label>
-       
+        <label htmlFor="name">
+          <input
+            className="input_Timer"
+            autoComplete="off"
+            id="name"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            name="name"
+            placeholder="Enter tracker name"
+          />
+          <button
+            onClick={() => dispatch(add(name))}
+            className="btnAdd"
+          ></button>
+        </label>
       </div>
     );
 };
