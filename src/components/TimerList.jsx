@@ -7,9 +7,9 @@ const items = useSelector((state) => state.counters);
 
     return (
       <div className="timerList">
-        {items.map((item) => ( 
+        {items.map((item, i) => ( 
           <TimerItem
-            key={item.name}
+            key={i}
             item={item}
           />)
         )}
