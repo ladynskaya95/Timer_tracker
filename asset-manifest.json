@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ladynskaya95/Timer_tracker/static/css/main.66a28d24.css",
-    "main.js": "/ladynskaya95/Timer_tracker/static/js/main.d3ef6938.js",
-    "index.html": "/ladynskaya95/Timer_tracker/index.html",
-    "static/media/delete.svg": "/ladynskaya95/Timer_tracker/static/media/delete.7838b275ce7caeb0a26e.svg",
-    "static/media/pause_circle.svg": "/ladynskaya95/Timer_tracker/static/media/pause_circle.29b26d8807aafd7c0cd9.svg",
-    "static/media/play_circle.svg": "/ladynskaya95/Timer_tracker/static/media/play_circle.26a384c32f228a366322.svg",
-    "main.66a28d24.css.map": "/ladynskaya95/Timer_tracker/static/css/main.66a28d24.css.map",
-    "main.d3ef6938.js.map": "/ladynskaya95/Timer_tracker/static/js/main.d3ef6938.js.map"
+    "main.css": "/Timer_tracker/static/css/main.2b38af9a.css",
+    "main.js": "/Timer_tracker/static/js/main.d3ef6938.js",
+    "index.html": "/Timer_tracker/index.html",
+    "static/media/delete.svg": "/Timer_tracker/static/media/delete.7838b275ce7caeb0a26e.svg",
+    "static/media/pause_circle.svg": "/Timer_tracker/static/media/pause_circle.29b26d8807aafd7c0cd9.svg",
+    "static/media/play_circle.svg": "/Timer_tracker/static/media/play_circle.26a384c32f228a366322.svg",
+    "main.2b38af9a.css.map": "/Timer_tracker/static/css/main.2b38af9a.css.map",
+    "main.d3ef6938.js.map": "/Timer_tracker/static/js/main.d3ef6938.js.map"
   },
   "entrypoints": [
-    "static/css/main.66a28d24.css",
+    "static/css/main.2b38af9a.css",
     "static/js/main.d3ef6938.js"
   ]
 }
