@@ -10,6 +10,7 @@ const initialState = [
     },
     isRunning: false,
     date: 1657286883.312,
+    i: 6
   },
   {
     id: "SjzHTRNl1TXmo7UwnO1ZG",
@@ -19,6 +20,7 @@ const initialState = [
     },
     isRunning: false,
     date: 1657286883.312,
+    i: 7
   },
 ];
 
