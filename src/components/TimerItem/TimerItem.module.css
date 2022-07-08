@@ -1,0 +1,81 @@
+.item_container{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  width: 100%;
+  padding: 5px 5px;
+  border-radius: 5px;
+  min-Width: 500px;
+  min-Width: 500px;
+}
+.active {
+  background-color: #b2f3ac;
+  color: green;
+}
+
+.item_title{
+  font-size: 23px;
+  cursor: pointer;
+  font-weight: 550;
+  padding: 10px;
+  width: 50%;
+  text-align: left;
+  font-family: 'Kanit', sans-serif;
+}
+
+.timer{
+  width: 35%;
+  text-align: right;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+}
+
+.buttons{
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.run{
+    background-image: url(../../img/play_circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 34px;
+    cursor: pointer;
+    background-color: rgba(25, 173, 210, 0.89);
+    height: 30px;
+    width: 32px;
+}
+.run:hover {
+  background-color: rgba(210, 84, 25, 0.05);
+}
+
+.delete{
+  background-image: url(../../img/delete.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 34px;
+  cursor: pointer;
+  background-color: rgba(210, 25, 25, 0.89);
+  height: 30px;
+    width: 32px;
+}
+.delete:hover {
+  background-color: rgba(210, 25, 25, 0.05);
+}
+
+.pause{
+    background-image: url(../../img/pause_circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 34px;
+    cursor: pointer;
+    background-color: rgba(210, 102, 25, 0.89);
+    height: 30px;
+    width: 32px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import TimerItem from "./TimerItem.jsx"
+import TimerItem from "./TimerItem/TimerItem.jsx"
 import { useSelector } from "react-redux";
 
 const TimerList = () => {

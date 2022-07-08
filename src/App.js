@@ -1,7 +1,7 @@
 import  React from "react";
 import "./App.css";
 
-import CreateTimer from "./components/CreateTimer.jsx";
+import CreateTimer from "./components/CreateTimer/CreateTimer.jsx";
 import TimerList from "./components/TimerList.jsx"
 
 function App() {

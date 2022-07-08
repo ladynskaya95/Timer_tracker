@@ -1,7 +1,10 @@
 import React from 'react';
+import styles from "./TimerItem.module.css"
+
 import { useDispatch} from "react-redux";
 import { DateTime, Duration } from "luxon";
-import { deleteCounter, updateCounter } from "../redux/actions";
+import { deleteCounter, updateCounter } from "../../redux/actions";
+
 
 const TimerItem = ({ item: { id, name, time, isRunning, date } }) => {
   const dispatch = useDispatch();
@@ -43,19 +46,27 @@ const TimerItem = ({ item: { id, name, time, isRunning, date } }) => {
   };
 
   return (
-    <div className="item_container">
-      <div className="item_title">{name}</div>
-      <div className="timer">
+    <div
+      className={
+        isActive
+          ? styles.item_container + " " + styles.active
+          : styles.item_container
+      }
+    >
+      <div className={styles.item_title}>{name}</div>
+      <div className={styles.timer}>
         {Duration.fromObject(counter).toISOTime({ suppressMilliseconds: true })}
       </div>
 
-      <div className="buttons">
-        <button className="run" onClick={() => isActivehandler()}>
-          | |
-        </button>
-        <button onClick={() => dispatch(deleteCounter(id))} className="delete">
-          -
-        </button>
+      <div className={styles.buttons}>
+        <button
+          className={isActive ? styles.pause : styles.run}
+          onClick={() => isActivehandler()}
+        ></button>
+        <button
+          onClick={() => dispatch(deleteCounter(id))}
+          className={styles.delete}
+        ></button>
       </div>
     </div>
   );

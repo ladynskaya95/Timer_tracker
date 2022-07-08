@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from "react-redux";
-import { addCounter } from "../redux/actions";
+import { addCounter } from "../../redux/actions";
+import styles from "./CreateTimer.module.css";
 
 const CreateTimer = () => {
 const [name, setName] = React.useState("");
@@ -20,11 +21,11 @@ const dispatch = useDispatch();
  );
 
     return (
-      <div className="createTimer">
+      <div className={styles.createTimer}>
         <form onSubmit={addTimer}>
           <label htmlFor="name">
             <input
-              className="input_Timer"
+              className={styles.input_Timer}
               autoComplete="off"
               id="name"
               value={name}
@@ -32,7 +33,7 @@ const dispatch = useDispatch();
               name="name"
               placeholder="Enter tracker name"
             />
-            <button type="submit" className="btnAdd"></button>
+            <button type="submit" className={styles.btnAdd + " " + styles.play}></button>
           </label>
         </form>
       </div>
