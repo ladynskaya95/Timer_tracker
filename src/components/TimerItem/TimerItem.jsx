@@ -51,13 +51,11 @@ const TimerItem = ({ item: { id, name, time, isRunning, date } }) => {
         isActive
           ? styles.item_container + " " + styles.active
           : styles.item_container
-      }
-    >
+      }>
       <div className={styles.item_title}>{name}</div>
       <div className={styles.timer}>
         {Duration.fromObject(counter).toISOTime({ suppressMilliseconds: true })}
       </div>
-
       <div className={styles.buttons}>
         <button
           className={isActive ? styles.pause : styles.run}
